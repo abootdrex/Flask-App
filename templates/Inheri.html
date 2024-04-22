@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</head>
+
+<body>
+    <nav
+        class="bg-red-100 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+                    <li class="block py-2 px-3 bg-white text-gray-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                        aria-current="page">
+                        <a href="/" class="">Opps</a>
+                    </li>
+                    <li class="block py-2 px-3 bg-white text-gray-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                        aria-current="page">
+                        <a href="/ab" class="">Abstraction</a>
+                    </li>
+                    <li class="block py-2 px-3 bg-white text-gray-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                        aria-current="page">
+                        <a href="/en" class="">Encapsulation</a>
+                    </li>
+                    <li class="block py-2 px-3 bg-white text-gray-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                        aria-current="page">
+                        <a href="/poly" class="">Polymorphism</a>
+                    </li>
+                    <li class="block py-2 px-3 bg-white text-gray-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                        aria-current="page">
+                        <a href="/inheri" class="">Inheritance</a>
+                    </li>
+                    <li class="block py-2 px-3 bg-white text-gray-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                        aria-current="page">
+                        <a href="/js" class="">JavaScript</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+            <div class="p-2 rounded-lg ring-2 ring-gray-500 dark:ring-gray-500">
+                <ul>
+                    <li>
+                        <h2 class="h-2 text-lg">Inheritance in Java -  </h2><br />
+                    <li>
+                        Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors
+                        of a parent object. It is an important part of OOPs.The idea behind inheritance in Java is that
+                        one can create new classes that are built upon existing classes. When you inherit from an existing class
+                        you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your
+                        current class also.Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+                    </li><br/>
+                    Types of inheritance
+                    There are five types of inheritance.
+                    
+                    <ol class="ps-5 p-2 mt-2 space-y-1 list-decimal list-inside">
+                        <li>Single Inheritance - In single inheritance, a single subclass extends from a single superclass. i.e.
+                            class Car extends Vehicle. </li>
+                        <li>Multilevel Inheritance - In multilevel inheritance, a subclass extends from a superclass and then the same
+                            subclass acts as a superclass for another class.&nbsp; i.e.class Car extends Vehicle                          class Vehicle extends Honda
+                            class Hond extends HondaCity</li>
+                        <li>Hierarchical Inheritance - In hierarchical inheritance, multiple subclasses extend from a single superclass.
+                            i.e. class Car extends Vehicle
+                            class Car extends Honda
+                            class Car extends HondaCity
+                            </li>
+                        <li> Multiple Inheritance - In multiple inheritance, a single subclass extends from multiple superclasses.
+                            Java doesn't support multiple inheritance. However, we can achieve multiple inheritance using interfaces.</li>
+                        <li>Hybrid Inheritance - 
+                            Hybrid inheritance refers to a combination of multiple inheritance and hierarchical inheritance. 
+                            In Java, multiple inheritance of classes is not directly supported, but it can be achieved using interfaces</li>
+
+                    </ol>
+                </ul>
+                </p>
+                <br />
+
+
+
+                <figure class="">
+                    <img class="rounded-lg" src="https://i.postimg.cc/Nf0qNy8N/Inheri.png" alt="image description">
+                    <figcaption class="mt-2 text-sm text-center text-gray-900 dark:text-gray-400">Inheritance in Java
+                    </figcaption>
+                </figure>
+
+                <br />
+                <figure class="center justify-center text-center items-center">
+                    <a href="../static/Opps/Inheritance/Inheritance.java"
+                        class=" text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>&nbsp;
+
+                        Download Java File
+                    </a>
+                </figure>
+            </div>
+    </section>
+</body>
+
+</html>
